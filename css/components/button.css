@@ -1,0 +1,33 @@
+.btn-green{
+	background-color: #07beb8;
+	padding: 8px 12px;
+	border-radius: 4px;
+	transition: all 0.5s;
+  cursor: pointer;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+}
+.btn-green:hover{
+	background: #2b59c3;
+}
+.btn-green span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.btn-green span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.btn-green:hover span{
+  padding-right: 25px;
+}
+.btn-green:hover span:after{
+  opacity: 1;
+  right: 0;
+}
